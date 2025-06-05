@@ -8,9 +8,6 @@ public class Inventory {
         items = new ArrayList<>();
     }
 
-    public void addItem(Item item) {
-        items.add(item);
-    }
 
     public void addItem(String name, int quantity, String type) {
         items.add(new Fruit(name, quantity, type));
@@ -19,6 +16,14 @@ public class Inventory {
     public void addItem(String name, int quantity, int durability, String type) {
         items.add(new Tool(name, quantity, durability, type));
     }
+
+    public void addItem(String name, int quantity) {
+        items.add(new Item(name, quantity));
+    }
+
+//    public void addMoney(int money) {
+//        items.add(new Money(money));
+//    }
 
 
     public void displayInventory() {

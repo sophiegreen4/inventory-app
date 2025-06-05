@@ -5,15 +5,15 @@ public class Main {
 
         Inventory inventory = new Inventory();
 
-        Item item = new Item("Map", 1);
-//      Fruit fruit = new Fruit( "Apple", 20, "Fuji");
-//      Tool tool = new Tool("Garden tool", 2, 75, "Shovel");
+       System.out.println("Your inventory is: ");
 
-        inventory.addItem(item);
-        inventory.addItem("Apple", 20, "Fuji");
-        inventory.addItem("Garden tool", 2, 75, "Shovel");
 
-        inventory.displayInventory();
+       inventory.addItem("Map", 1);
+       inventory.addItem("Apple", 10, "Red");
+       inventory.addItem("Garden tool", 2, 75, "Shovel");
+       inventory.addItem("Fishing pole", 1);
+
+       inventory.displayInventory();
 
     }
 }
