@@ -1,12 +1,11 @@
-public class Money{
-    private int money;
+public class Money extends Item{
 
-    public Money(int money) {
-        this.money = money;
+    public Money(int amount) {
+        super("Money", amount);
     }
 
     public int getMoney() {
-        return money;
+        return getQuantity();
     }
 
     @Override
@@ -14,3 +13,5 @@ public class Money{
         return "Wallet: £" + getMoney();
     }
 }
+
+

@@ -21,9 +21,9 @@ public class Inventory {
         items.add(new Item(name, quantity));
     }
 
-//    public void addMoney(int money) {
-//        items.add(new Money(money));
-//    }
+    public void addMoney(int amount) {
+        items.add(new Money(amount));
+    }
 
 
     public void displayInventory() {

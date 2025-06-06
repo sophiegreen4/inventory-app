@@ -7,7 +7,7 @@ public class Main {
 
        System.out.println("Your inventory is: ");
 
-
+       inventory.addMoney(10);
        inventory.addItem("Map", 1);
        inventory.addItem("Apple", 10, "Red");
        inventory.addItem("Garden tool", 2, 75, "Shovel");
