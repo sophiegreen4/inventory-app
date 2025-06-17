@@ -10,7 +10,7 @@ public class Money extends Item{
 
     @Override
     public String toString() {
-        return "Wallet: £" + getMoney();
+        return "Wallet: " + getMoney() + " bells";
     }
 }
 

@@ -3,15 +3,18 @@
 public class Main {
     public static void main(String[] args) {
 
+
         Inventory inventory = new Inventory();
 
-       System.out.println("Your inventory is: ");
+       System.out.println("Inside pockets: ");
 
        inventory.addMoney(10);
        inventory.addItem("Map", 1);
        inventory.addItem("Apple", 10, "Red");
-       inventory.addItem("Garden tool", 2, 75, "Shovel");
-       inventory.addItem("Fishing pole", 1);
+       inventory.addItem("Shovel", 2, 75);
+       inventory.addItem("Axe", 1, 15);
+       inventory.addItem("Fishing net", 1);
+       inventory.addItem("Fossil", 6);
 
        inventory.displayInventory();
 

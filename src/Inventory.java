@@ -13,8 +13,8 @@ public class Inventory {
         items.add(new Fruit(name, quantity, type));
     }
 
-    public void addItem(String name, int quantity, int durability, String type) {
-        items.add(new Tool(name, quantity, durability, type));
+    public void addItem(String name, int quantity, int durability) {
+        items.add(new Tool(name, quantity, durability));
     }
 
     public void addItem(String name, int quantity) {
@@ -28,7 +28,7 @@ public class Inventory {
 
     public void displayInventory() {
         for (Item item : items) {
-            System.out.println("Item: " + item.toString());
+            System.out.println(item.toString());
         }
     }
 }
